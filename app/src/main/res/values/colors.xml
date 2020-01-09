@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="twitterBlue">#1CA1F1</color>
+    <color name="twitterBlueDarker">#188CD3</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhitesmoke">#E8ECEC</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorgGainsboro">#929292</color>
+
+</resources>
