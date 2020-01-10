@@ -12,5 +12,6 @@
 
     <color name="colorBlack">#000000</color>
     <color name="colorgGainsboro">#929292</color>
+    <color name="blue">#0084b4</color>
 
 </resources>

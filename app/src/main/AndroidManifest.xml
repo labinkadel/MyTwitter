@@ -13,9 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeLight">
-        <activity android:name=".CameraActivity">
+        <activity android:name=".activity.AggActivity">
         </activity>
-        <activity android:name=".SplashActivity">
+        <activity android:name=".activity.PasswordActivity">
+        </activity>
+        <activity android:name=".activity.CameraActivity">
+        </activity>
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,20 +27,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CreateAccountActivity"
+            android:name=".activity.CreateAccountActivity"
             android:windowSoftInputMode="adjustResize">
         </activity>
-        <activity android:name=".ComposeTweetActivity">
+        <activity android:name=".activity.ComposeTweetActivity">
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".activity.LoginActivity"
             android:windowSoftInputMode="adjustResize">
         </activity>
         <activity
-            android:name=".EditTweetActivity"
+            android:name=".activity.EditTweetActivity"
             android:windowSoftInputMode="adjustResize">
         </activity>
-        <activity android:name=".IntroActivity" />
+        <activity android:name=".activity.IntroActivity" />
     </application>
 
 </manifest>

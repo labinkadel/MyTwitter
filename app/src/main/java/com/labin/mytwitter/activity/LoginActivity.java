@@ -1,4 +1,4 @@
-package com.labin.mytwitter;
+package com.labin.mytwitter.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.labin.mytwitter.serverresponse.SignUpResponse;
+import com.labin.mytwitter.R;
 
 public class LoginActivity extends AppCompatActivity {
      Button btnLogin;
@@ -40,7 +40,16 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+
+
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
+
+
+
+
+
+
             @Override
             public void onClick(View v) {
                 login(); }
