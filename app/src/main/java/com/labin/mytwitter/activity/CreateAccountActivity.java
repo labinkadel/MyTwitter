@@ -16,7 +16,7 @@ public class CreateAccountActivity extends AppCompatActivity {
     ImageView back;
     EditText username,email;
     Button next;
-    static String Ruser,Remail;
+    public static String Ruser,Remail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +54,7 @@ public class CreateAccountActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(CreateAccountActivity.this,TwiteerActivity.class);
+                Intent intent= new Intent(CreateAccountActivity.this,EditTweetActivity.class);
                 startActivity(intent);
             }
         });

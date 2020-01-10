@@ -1,12 +1,14 @@
 package com.labin.mytwitter.serverresponse;
 
 public class SignUpResponse {
-    private String status;
-    private String token;
+    String status, username, usertoken;
 
-    public SignUpResponse(String status, String token) {
+    public SignUpResponse(String status, String username, String usertoken) {
         this.status = status;
-        this.token = token;
+        this.username = username;
+        this.usertoken = usertoken;
+
+
     }
 
     public String getStatus() {
@@ -17,11 +19,19 @@ public class SignUpResponse {
         this.status = status;
     }
 
-    public String getToken() {
-        return token;
+    public String getUsername() {
+        return username;
     }
 
-    public void setToken(String token) {
-        this.token = token;
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getUsertoken() {
+        return usertoken;
+    }
+
+    public void setUsertoken(String usertoken) {
+        this.usertoken = usertoken;
     }
 }

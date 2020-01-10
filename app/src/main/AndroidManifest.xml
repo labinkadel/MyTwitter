@@ -13,18 +13,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeLight">
-        <activity android:name=".activity.TwiteerActivity">
+        <activity android:name=".TwiteerDashActivity">
         </activity>
-        <activity android:name=".activity.verifiActivity">
-        </activity>
-        <activity android:name=".activity.FinalRegActivity">
-        </activity>
-        <activity android:name=".activity.AggActivity">
-        </activity>
-        <activity android:name=".activity.PasswordActivity">
-        </activity>
-        <activity android:name=".activity.CameraActivity">
-        </activity>
+        <activity
+            android:name=".activity.Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppThemeLight.NoActionBar" />
+        <activity android:name=".ui.share.ShareFragment" />
+        <activity android:name=".ui.send.SendFragment" />
+        <activity android:name=".ui.gallery.GalleryFragment" />
+        <activity android:name=".activity.verifiActivity" />
+        <activity android:name=".activity.FinalRegActivity" />
+        <activity android:name=".activity.AggActivity" />
+        <activity android:name=".activity.PasswordActivity" />
+        <activity android:name=".activity.CameraActivity" />
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,19 +36,14 @@
         </activity>
         <activity
             android:name=".activity.CreateAccountActivity"
-            android:windowSoftInputMode="adjustResize">
-        </activity>
-        <activity android:name=".activity.ComposeTweetActivity">
-        </activity>
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activity.ComposeTweetActivity" />
         <activity
             android:name=".activity.LoginActivity"
-            android:windowSoftInputMode="adjustResize">
-        </activity>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".activity.EditTweetActivity"
-            android:windowSoftInputMode="adjustResize">
-        </activity>
-        <activity android:name=".activity.IntroActivity" />
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
