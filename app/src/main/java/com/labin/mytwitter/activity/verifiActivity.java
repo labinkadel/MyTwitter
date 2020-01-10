@@ -9,19 +9,17 @@ import android.widget.Button;
 
 import com.labin.mytwitter.R;
 
-public class AggActivity extends AppCompatActivity {
-    Button btn_cus_next;
+public class verifiActivity extends AppCompatActivity {
+    Button btn_V_login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_agg);
-        btn_cus_next=findViewById(R.id.btn_cus_next);
-
-
-        btn_cus_next.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_verifi);
+        btn_V_login=findViewById(R.id.btn_V_login);
+        btn_V_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AggActivity.this,FinalRegActivity.class);
+                Intent intent = new Intent(verifiActivity.this,PasswordActivity.class);
                 startActivity(intent);
             }
         });

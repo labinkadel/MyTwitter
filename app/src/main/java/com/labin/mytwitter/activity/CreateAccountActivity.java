@@ -30,15 +30,33 @@ public class CreateAccountActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Ruser=username.getText().toString().trim();
+                Ruser = username.getText().toString().trim();
 
-                Remail=email.getText().toString().trim();
+                Remail = email.getText().toString().trim();
 
                 if (!TextUtils.isEmpty(Ruser) && !TextUtils.isEmpty(Remail)) {
 
-                    Intent intent= new Intent(CreateAccountActivity.this,AggrementActivity.class);
+                    Intent intent = new Intent(CreateAccountActivity.this, AggActivity.class);
                     startActivity(intent);
 
-
+                }else
+                {
+                    if (TextUtils.isEmpty(Ruser)) {
+                        username.setError("Enter Username");
+                    }
+                    if (TextUtils.isEmpty(Remail)) {
+                        email.setError("Enter Phone number or Email");
+                    }
+                    return;
                 }
+            }
+        });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(CreateAccountActivity.this,TwiteerActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
 }

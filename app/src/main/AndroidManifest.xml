@@ -13,6 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeLight">
+        <activity android:name=".activity.TwiteerActivity">
+        </activity>
+        <activity android:name=".activity.verifiActivity">
+        </activity>
+        <activity android:name=".activity.FinalRegActivity">
+        </activity>
         <activity android:name=".activity.AggActivity">
         </activity>
         <activity android:name=".activity.PasswordActivity">
